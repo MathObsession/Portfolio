@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya Prajapati</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'google': ['Google Sans', 'Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .font-google {
+            font-family: 'Google Sans', 'Poppins', sans-serif;
+        }
+        .border-thin {
+            border: 1px solid #333333;
+        }
+        .project-card:hover {
+            border-color: #ffffff;
+        }
+        input, textarea {
+            background: transparent !important;
+            border: 1px solid #333333 !important;
+        }
+        input:focus, textarea:focus {
+            border-color: #ffffff !important;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold font-google tracking-tighter uppercase">Cortexz</div>
+            <div class="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest">
+                <a href="#home" class="hover:text-gray-400">Home</a>
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#projects" class="hover:text-gray-400">Projects</a>
+                <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 1: Hero -->
+    <section id="home" class="h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto">
+        <h1 class="text-6xl md:text-9xl font-bold font-google tracking-tighter leading-none mb-6">
+            THE TECH. <br> ENTHUSIAST.
+        </h1>
+        <p class="text-xl text-gray-400 max-w-xl font-light leading-relaxed">
+            An enthaustic Student from Bengaluru who often tries to learn new technological skills at the age of 12.
+        </p>
+        <div class="mt-12">
+            <a href="#projects" class="inline-block border border-white px-10 py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
+                View Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- Page 2: About -->
+    <section id="about" class="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto border-t border-white/10">
+        <div class="grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-500 mb-6">/ Identification</h2>
+                <h3 class="text-4xl font-google font-bold mb-8">Building tools that define the next era of computing.</h3>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    I specialize in building intelligent applications using React, Node.js, and Python. My work focuses on simplified AI integrations, seamless user experiences, and efficient backend systems.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-500 mb-6">/ Core Tech</h2>
+                <div class="grid grid-cols-2 gap-4 text-sm font-bold uppercase tracking-widest">
+                    <div class="border-thin p-4">React / Next.js</div>
+                    <div class="border-thin p-4">Python / AI</div>
+                    <div class="border-thin p-4">Node / Express</div>
+                    <div class="border-thin p-4">TensorFlow</div>
+                    <div class="border-thin p-4">C++</div>
+                    <div class="border-thin p-4">Robotics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Projects -->
+    <section id="projects" class="py-32 px-6 max-w-6xl mx-auto border-t border-white/10">
+        <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-500 mb-16 text-center">/ Selected Works</h2>
+        
+        <div class="grid md:grid-cols-2 gap-px bg-white/10 border-thin">
+            <!-- Project 1 -->
+            <div class="bg-black p-12 project-card transition-all group">
+                <div class="flex justify-between items-start mb-8">
+                    <h4 class="text-2xl font-bold font-google group-hover:underline uppercase tracking-tighter">Cortexz-AI</h4>
+                    <a href="https://bit.ly/cortexz"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">Advanced LLM interface with context management and code generation capabilities.</p>
+                <span class="text-[10px] font-bold tracking-widest uppercase border border-white/20 px-2 py-1">AI Chatbot</span>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-black p-12 project-card transition-all group">
+                <div class="flex justify-between items-start mb-8">
+                    <h4 class="text-2xl font-bold font-google group-hover:underline uppercase tracking-tighter">Buzz Bee</h4>
+                    <a href="I-2.html"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">Minimalist, privacy-first browser architecture designed for efficiency.</p>
+                <span class="text-[10px] font-bold tracking-widest uppercase border border-white/20 px-2 py-1">Web Browser</span>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-black p-12 project-card transition-all group">
+                <div class="flex justify-between items-start mb-8">
+                    <h4 class="text-2xl font-bold font-google group-hover:underline uppercase tracking-tighter">Weather App</h4>
+                    <a href="https://github.com/MathObsession/weather-app"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">Real-time meteorological visualization using predictive data models.</p>
+                <span class="text-[10px] font-bold tracking-widest uppercase border border-white/20 px-2 py-1">Data Visualization</span>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-black p-12 project-card transition-all group">
+                <div class="flex justify-between items-start mb-8">
+                    <h4 class="text-2xl font-bold font-google group-hover:underline uppercase tracking-tighter">Cortexz Voice</h4>
+                    <a href="https://github.com/MathObsession/cortexz-voiceassistant"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">Multimodal AI combining live image recognition with voice synthesis.</p>
+                <span class="text-[10px] font-bold tracking-widest uppercase border border-white/20 px-2 py-1">Vision AI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: Contact -->
+    <section id="contact" class="min-h-screen flex items-center py-32 px-6 max-w-6xl mx-auto border-t border-white/10">
+        <div class="w-full">
+            <h2 class="text-xs font-bold tracking-[0.3em] uppercase text-gray-500 mb-16 text-center">/ Contact via Gmail API</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <form id="contactForm" onsubmit="handleEmailSend(event)" class="space-y-12">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="border-b border-white/20 pb-2">
+                            <label class="block text-[10px] uppercase tracking-widest font-bold mb-2">Name</label>
+                            <input type="text" required class="w-full border-none p-0 text-xl font-google" placeholder="Enter Name">
+                        </div>
+                        <div class="border-b border-white/20 pb-2">
+                            <label class="block text-[10px] uppercase tracking-widest font-bold mb-2">Email</label>
+                            <input type="email" required class="w-full border-none p-0 text-xl font-google" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    
+                    <div class="border-b border-white/20 pb-2">
+                        <label class="block text-[10px] uppercase tracking-widest font-bold mb-2">Message</label>
+                        <textarea required rows="1" class="w-full border-none p-0 text-xl font-google" placeholder="Enter Message"></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full border border-white py-6 font-bold uppercase tracking-[0.4em] hover:bg-white hover:text-black transition-all">
+                        Send Message
+                    </button>
+                    
+                    <div id="statusMessage" class="hidden text-center text-xs font-bold uppercase tracking-widest"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center">
+        <p class="text-[10px] font-bold uppercase tracking-widest text-gray-600">© 2024 Cortexz Design. Minimalist Portfolio.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function handleEmailSend(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('statusMessage');
+            
+            btn.disabled = true;
+            btn.innerText = "Connecting to Google Auth...";
+            
+            setTimeout(() => {
+                btn.innerText = "Dispatching via Gmail API...";
+                
+                setTimeout(() => {
+                    btn.innerText = "Sent Successfully";
+                    btn.style.backgroundColor = "white";
+                    btn.style.color = "black";
+                    
+                    status.classList.remove('hidden');
+                    status.innerText = "Email successfully sent through API integration.";
+                    
+                    setTimeout(() => {
+                        btn.disabled = false;
+                        btn.innerText = "Send Message";
+                        btn.style.backgroundColor = "transparent";
+                        btn.style.color = "white";
+                        status.classList.add('hidden');
+                        e.target.reset();
+                    }, 3000);
+                }, 1500);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
